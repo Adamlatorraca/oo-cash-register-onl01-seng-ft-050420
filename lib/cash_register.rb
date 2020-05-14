@@ -41,7 +41,7 @@ class CashRegister
     if @last_transaction == 0
       @total = 0
     else
-      @total = @total - @last_transaction
+      @total -= @last_transaction
     end
     @total
   end
