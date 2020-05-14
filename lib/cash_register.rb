@@ -15,7 +15,7 @@ class CashRegister
     item_attr[:quantity] = quantity
 
     @cart << item_attr
-
+    @last_transaction = @total
     @total += price * quantity
 
   end
