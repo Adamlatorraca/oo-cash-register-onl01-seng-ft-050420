@@ -17,7 +17,6 @@ class CashRegister
 
     @cart << item_attr
     @total += price * quantity
-    @total
   end
 
   def apply_discount
