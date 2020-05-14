@@ -9,10 +9,10 @@ class CashRegister
   end
 
   def add_item(item, price, quantity = 1)
-    item_info = {}
-    item_info[:name] = item
-    item_info[:price] = price
-    item_info[:quantity] = quantity
+    items = {}
+    items[:name] = item
+    items[:price] = price
+    items[:quantity] = quantity
 
     @cart << item_info
 
@@ -31,12 +31,14 @@ class CashRegister
   def items
     item_names = []
     @cart.each do | item_info |
-      #test expects product name * quantity...
       for qty in 1..item_info[:quantity]
         item_names << item_info[:name]
       end
     end
     item_names
   end
+
+  def void_last_transaction
+    if item
 
 end
