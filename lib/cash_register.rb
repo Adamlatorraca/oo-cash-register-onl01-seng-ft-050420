@@ -13,6 +13,6 @@ class CashRegister
       item[:name] = item
       item[:total] = price
       item[:quantity] = quantity
-
+    end
 
 end
