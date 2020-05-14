@@ -38,7 +38,7 @@ class CashRegister
   end
 
   def void_last_transaction
-    if @last_transaction == 0
+    if cart.empty?
       @total = 0
     else
       @total -= @last_transaction
