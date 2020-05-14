@@ -40,5 +40,5 @@ class CashRegister
 
   def void_last_transaction
     if item
-
+    end
 end
