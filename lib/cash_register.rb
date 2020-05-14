@@ -43,6 +43,5 @@ class CashRegister
     else
       @total - @last_transaction
     end
-    @total
   end
 end
