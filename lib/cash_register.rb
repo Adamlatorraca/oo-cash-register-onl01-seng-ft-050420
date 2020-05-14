@@ -9,12 +9,12 @@ class CashRegister
   end
 
   def add_item(item, price, quantity = 1)
-    items = {}
-    items[:name] = item
-    items[:price] = price
-    items[:quantity] = quantity
+    item_attr = {}
+    item_attr[:name] = item
+    item_attr[:price] = price
+    item_attr[:quantity] = quantity
 
-    @cart << item_info
+    @cart << item_attr
 
     @total += price * quantity
 
