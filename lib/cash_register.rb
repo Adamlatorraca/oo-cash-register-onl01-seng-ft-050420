@@ -41,7 +41,7 @@ class CashRegister
     if @cart.empty?
       @total = 0
     else
-      @total -= @last_transaction
+      @total - @last_transaction
     end
     @total
   end
