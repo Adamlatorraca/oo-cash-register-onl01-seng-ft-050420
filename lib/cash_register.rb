@@ -9,9 +9,10 @@ class CashRegister
 
     def add_item(item, price, quantity = 1)
       items = {}
-      item[:name] = item
-      item[:total] = price
-      item[:quantity] = quantity
+      items[:name] = item
+      items[:total] = price
+      items[:quantity] = quantity
+
     end
 
 end
