@@ -29,13 +29,13 @@ class CashRegister
   end
 
   def items
-    item_names = []
+    items = []
     @cart.each do | item_attr |
       for qty in 1..item_attr[:quantity]
-        item_names << item_attr[:name]
+        items << item_attr[:name]
       end
     end
-    item_names
+    items
   end
 
   def void_last_transaction
