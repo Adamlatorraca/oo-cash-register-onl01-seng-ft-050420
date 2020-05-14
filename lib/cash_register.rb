@@ -31,7 +31,7 @@ class CashRegister
   def items
     items = []
     @cart.each do | item_attr |
-      for qty in 1..item_attr[:quantity]
+      for quantity in 1..item_attr[:quantity]
         items << item_attr[:name]
       end
     end
