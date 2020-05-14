@@ -16,7 +16,7 @@ class CashRegister
     item_attr[:quantity] = quantity
 
     @cart << item_attr
-    @total = price * quantity
+    @total += price * quantity
     @last_transaction = @total
     @total
   end
@@ -40,8 +40,7 @@ class CashRegister
   end
 
   def void_last_transaction
-
-
       @total = @total - @last_transaction
+
   end
 end
